@@ -28,11 +28,11 @@ body {
   animation: pulsate 2s infinite;
 }
 .img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   position: absolute;
-  left: 250px;
+  left: 5%;
   background: radial-gradient(circle, #000, #ff5e00, #000);
 
   z-index: 4;
@@ -45,11 +45,11 @@ body {
 }
 
 .img2 {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   position: absolute;
-  right: 250px;
+  right: 5%;
   background: radial-gradient(circle, #000, #ff5e00, #000);
 
   z-index: 4;
@@ -59,6 +59,58 @@ body {
   filter: drop-shadow(0 0 8px #682600);
   animation: pulsate 2s infinite;
 
+}
+
+.img3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5%;
+  background: radial-gradient(circle, #000, #ff5e00, #000);
+
+  z-index: 4;
+
+  background-size: 5px 5px;
+
+  filter: drop-shadow(0 0 8px #682600);
+  animation: pulsate 2s infinite;
+
+}
+
+.img4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  background: radial-gradient(circle, #000, #ff5e00, #000);
+
+  z-index: 4;
+
+  background-size: 5px 5px;
+
+  filter: drop-shadow(0 0 8px #682600);
+  animation: pulsate 2s infinite;
+
+}
+
+@media (max-width: 725px){
+  .img3{
+    display: none;
+  }
+  .img4 {
+    display: none;
+  }
+}
+
+@media (min-width: 725px){
+  .img{
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
 }
 
 .text-above,
